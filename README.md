@@ -106,10 +106,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/medusajs/b2b-starter-medusa.git
+git clone https://github.com/huuhadev/medusa-b2b.git
 
 # Go to the folder
-cd ./b2b-starter-medusa
+cd ./medusa-b2b
 
 # Install dependencies & setup medusa storefront & backend
 yarn install && yarn setup
@@ -118,12 +118,12 @@ yarn install && yarn setup
 yarn dev
 ```
 
-#### Setup publishable key
+#### Setup publishable key[.env](..%2Fstore%2F.env)
 
-- ✅ Visit [Admin: Publishable Key](http://localhost:9000/app/settings/publishable-api-keys)
+- ✅ Visit Admin: [Publishable Key](http://localhost:9000/app/settings/publishable-api-keys)
   - <b>Credentials</b>:
-    - <b>email</b>: `admin@test.com`
-    - <b>password</b>: `supersecret`
+    - <b>email</b>: `huuhadev@gmail.com`
+    - <b>password</b>: `password`
 - ✅ Copy token key of "Webshop"
 - ✅ Open file - `apps/storefront/.env`
 - ✅ Add token to this var - `NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY`
@@ -132,27 +132,3 @@ Visit the following links to see the Medusa storefront & admin
 
 - [Medusa Admin](http://localhost:9000/app)
 - [Medusa Storefront](http://localhost:8000)
-
-&nbsp;
-
-# Resources
-
-#### Learn more about Medusa
-
-- [Website](https://www.medusajs.com/)
-- [GitHub](https://github.com/medusajs)
-- [2.0 Documentation](https://docs.medusajs.com/v2)
-
-#### Learn more about Next.js
-
-- [Website](https://nextjs.org/)
-- [GitHub](https://github.com/vercel/next.js)
-- [Documentation](https://nextjs.org/docs)
-
-&nbsp;
-
-## Contributors
-
-<a href = "https://github.com/medusajs/b2b-starter-medusa/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=medusajs/b2b-starter-medusa"/>
-</a>
