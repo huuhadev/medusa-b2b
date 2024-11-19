@@ -111,6 +111,7 @@ git clone https://github.com/huuhadev/medusa-b2b.git
 # Go to the folder
 cd ./medusa-b2b
 
+# Create a Postgres database named medusa_b2b and make sure the Postgres server is running locally.
 # Install dependencies & setup medusa storefront & backend
 yarn install && yarn setup
 
