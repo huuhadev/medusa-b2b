@@ -5,6 +5,7 @@ node_modules
 
 # Yarn 2+
 .yarn/*
+.idea
 .yarn
 .yarnrc.yml
 !.yarn/patches
