@@ -1,32 +1,6 @@
-<h1 align="center">
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/user-attachments/assets/38ba3a7b-e07b-4117-8187-7b171eae3769" alt="B2B Commerce Starter" width="80" height="80"></a>
-  <br>
-  <br>
-  Medusa B2B Commerce Starter
-  <br>
-</h1>
+<h1 align="center"> Medusa B2B Commerce Starter </h1>
 
 <p align="center">Customizable B2B ecommerce monorepo built with <a href="https://medusajs.com/" target="_blank">Medusa 2.0</a> & Next.js Storefront</p>
-
-<p align="center">
-  <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
-  </a>
-    
-  <a href="https://discord.gg/xpCwq3Kfn8">
-    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
-  </a>
-
-  <a href="https://twitter.com/intent/follow?screen_name=medusajs">
-    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
-  </a>
-</p>
-
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/833b26a5-4b52-447f-ac30-6ae02cbe8f05" controls="controls" muted="muted" playsinline="playsinline">
-</video>
-</p>
-
 <br>
 
 ## Table
@@ -36,8 +10,6 @@
   - [Features](#features)
   - [Demo](#demo)
 - [Quickstart](#quickstart)
-- [Resources](#resources)
-- [Contributors](#contributors)
 
 &nbsp;
 
@@ -103,23 +75,30 @@
 ## Quickstart
 
 #### Setup storefront & API
+⚠️ Create a Postgres database named `medusa_b2b` and make sure the Postgres server is running locally.
+
+Clone the repository
+```bash
+git clone https://github.com/huuhadev/medusa-b2b.git
+```
+
+Go to the folder
+```bash
+cd ./medusa-b2b
+```
+
+Install dependencies & setup medusa storefront & backend
+```bash
+yarn install && yarn setup
+```
+
+Start Servers - storefront & backend
 
 ```bash
-# Clone the repository
-git clone https://github.com/huuhadev/medusa-b2b.git
-
-# Go to the folder
-cd ./medusa-b2b
-
-# Create a Postgres database named medusa_b2b and make sure the Postgres server is running locally.
-# Install dependencies & setup medusa storefront & backend
-yarn install && yarn setup
-
-# Start Servers - storefront & backend
 yarn dev
 ```
 
-#### Setup publishable key[.env](..%2Fstore%2F.env)
+#### Setup publishable key[.env](../storefront/.env)
 
 - ✅ Visit Admin: [Publishable Key](http://localhost:9000/app/settings/publishable-api-keys)
   - <b>Credentials</b>:
